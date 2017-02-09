@@ -25,9 +25,15 @@ nav {
 
 #responsivegraphic {
 	width: 100%;
+	padding: 5%;
+	margin: 0 auto;
 }
 
-@media (min-width: 40em) {
+@media (max-width: 720px) {
+	nav{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
 
 	main {
 		width: 80%;
