@@ -5,76 +5,71 @@ html {
 
 nav {
 	background-color: pink;
-	padding-right: 77%;
-	padding-left: 23%;
 }
 
 #container {
-	background-color: white;
-	font-family: 'Helvetica', sans-serif;
-	padding: 20%;
-	margin: 0px auto;
+	background-color: #F7F7A0;
+	font-family: "Amatic SC", sans-serif;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 24px;
 }
 
+
 #pagelogo {
+	display: flex;
+	width: 30%;
+	justify-content: center;
+	padding-left: 35%;
+}
 
-	width: 100%;
-	padding-right: 10%
-
+#banner {
+	display: flex;
+	justify-content: center;
+	width: 55%;
+	padding-left: 22%;
+	padding-bottom: 5%;
 }
 
 #responsivegraphic {
-	width: 100%;
+	display: flex;
+	width: 80%;
 	padding: 5%;
 	margin: 0 auto;
+	justify-content: center;
 }
 
 @media (max-width: 720px) {
 	nav{
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-
-	main {
-		width: 80%;
+		width: 100%;
 	}
 }
- 
-.snoutvideo {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 25px;
-	height: 0;
-}
 
-.snoutvideo iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+h1 {
+	font-size: 64px;
 }
 
 
 ul {
-	font-family: 'Amatic SC', cursive;
+	font-family: 'Barrio', cursive;
 	list-style-type: none;
-	position: fixed;
-	top: 0;
-	border: 1px solid #e7e7e7;
-	background-color: #FFD6FC;
+	position: static;
 	margin: 0 auto;
-	padding: 0 auto;
 	overflow: hidden;
+	align-items: center;
+	padding-left: 25%;
 }
 
 li {
-	display: inline-block;
+	display: inline-flex;
 	text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 24px;
+    justify-content: center;
 }
 
 a:link {
@@ -98,34 +93,4 @@ a:active {
 @media screen and (max-width:680px) {
 	ul {position: relative;}
 	}
-}
-
-
-.row {
-  overflow: auto;
-  margin-bottom: 16px;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-[class*="col-"] {
-  background-color: rgba(45, 157, 192, 0.2);
-  border: 1px solid #2d9dc0;
-  float: left;
-  padding: 16px;
 }

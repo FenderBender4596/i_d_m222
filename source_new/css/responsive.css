@@ -4,9 +4,10 @@ html {
 }
 
 nav {
+	display: flex;
 	background-color: pink;
-	padding-right: 77%;
-	padding-left: 23%;
+	justify-content: center;
+
 }
 
 #container {
