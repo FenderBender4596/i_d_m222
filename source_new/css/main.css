@@ -1,0 +1,99 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic);
+
+*{box-sizing: border-box;}
+html{
+    font-size: 100%;
+    background-color: #5b4233;
+    background-image: url('graphics2/parchment.jpg');
+}
+
+head {
+  justify-content: center;
+}
+
+body {
+  font-family: "Magic:The Gathering", serif;
+  margin: auto;
+  padding: auto;
+  text-align: center; 
+}
+
+#ravnica {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+#wrapper {
+  max-width: 800px;
+  max-height: 600px;
+  margin: auto;
+  background-color: #E9D09A;
+  border: black 2px;
+}
+
+form {
+  position: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  font-family: "Magic:The Gathering", serif;
+  background-color: gold;
+  max-width: 72px;
+  max-height: 72px;
+  font-size: 14px;
+}
+
+input {
+  margin-right: 30%;
+  color: black;
+  font-family: "Magic:The Gathering", serif;
+}
+
+h1 {
+  color: gold;
+  padding-top: 3%;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: red;
+  font-size: 48px;
+}
+
+#fname {
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #F7F7F7;
+}
+
+#submit {
+  background-color: gold;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+#header {
+  background-color: #E9D09A;
+}
+
+#displayMsg {
+  margin-left: 50%;
+  margin-bottom: 30%;
+}
+
+#left {
+  display: flex;
+  float: left;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#right {
+  display: flex;
+  float: right;
+  justify-content: space-around;
+  align-content: center;
+}
