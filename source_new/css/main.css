@@ -5,7 +5,6 @@
 html{
     font-size: 100%;
     background-color: #5b4233;
-    background-image: url('graphics2/parchment.jpg');
 }
 
 head {
@@ -16,7 +15,7 @@ body {
   font-family: "Magic:The Gathering", serif;
   margin: auto;
   padding: auto;
-  text-align: center; 
+  text-align: center;
 }
 
 #ravnica {
@@ -28,9 +27,10 @@ body {
 #wrapper {
   max-width: 800px;
   max-height: 600px;
-  margin: auto;
+  margin: 0 auto;
   background-color: #E9D09A;
-  border: black 2px;
+  border-style: solid;
+  border-color: black 5px;
 }
 
 form {
@@ -47,12 +47,16 @@ button {
   max-width: 72px;
   max-height: 72px;
   font-size: 14px;
+  border-style: solid;
+  border-color: #daa520 5px;
 }
 
 input {
   margin-right: 30%;
   color: black;
   font-family: "Magic:The Gathering", serif;
+  border-style: solid;
+  border-color: #daa520 5px;
 }
 
 h1 {
@@ -81,7 +85,7 @@ h1 {
 
 #displayMsg {
   margin-left: 50%;
-  margin-bottom: 30%;
+  float: right;
 }
 
 #left {
@@ -96,4 +100,8 @@ h1 {
   float: right;
   justify-content: space-around;
   align-content: center;
+}
+
+#ravnica {
+  padding-top: 5%;
 }
