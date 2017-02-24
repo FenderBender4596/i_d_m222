@@ -1,44 +1,34 @@
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic);
-
-*{box-sizing: border-box;}
 html{
     font-size: 100%;
     background-color: #5b4233;
 }
 
-head {
-  justify-content: center;
-}
-
 body {
   font-family: "Magic:The Gathering", serif;
-  margin: auto;
-  padding: auto;
-  text-align: center;
+  margin: 12px;
+  background-color: #333333;
+  /* transition on change */
 }
 
-#ravnica {
-    display: block;
-    margin: auto;
-    width: 60%;
-}
 
 #wrapper {
+  background-color: #cca831;
+  height: 600px;
   max-width: 800px;
-  max-height: 600px;
-  margin: 0 auto;
-  background-color: #E9D09A;
+  margin: 10px auto;
+  text-align: center;
   border-style: solid;
-  border-color: black 5px;
+  border-color: black;
 }
 
-form {
-  position: center;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#guildheader {
+  background-color: #E9D09A;
+  color: gold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: red;
+  font-size: 48px;
+  margin-bottom: 2px;
+  padding-top: 5px;
 }
 
 button {
@@ -48,44 +38,6 @@ button {
   max-height: 72px;
   font-size: 14px;
   border-style: solid;
-  border-color: #daa520 5px;
-}
-
-input {
-  margin-right: 30%;
-  color: black;
-  font-family: "Magic:The Gathering", serif;
-  border-style: solid;
-  border-color: #daa520 5px;
-}
-
-h1 {
-  color: gold;
-  padding-top: 3%;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: red;
-  font-size: 48px;
-}
-
-#fname {
-  padding-left: 2%;
-  padding-right: 2%;
-  background-color: #F7F7F7;
-}
-
-#submit {
-  background-color: gold;
-  padding-left: 6%;
-  padding-right: 6%;
-}
-
-#header {
-  background-color: #E9D09A;
-}
-
-#displayMsg {
-  margin-left: 50%;
-  float: right;
 }
 
 #left {
@@ -93,6 +45,7 @@ h1 {
   float: left;
   justify-content: space-around;
   align-content: center;
+  margin-left: 2px;
 }
 
 #right {
@@ -100,8 +53,31 @@ h1 {
   float: right;
   justify-content: space-around;
   align-content: center;
+  margin-right: 2px;
 }
 
 #ravnica {
-  padding-top: 5%;
+    display: block;
+    margin: auto;
+    width: 40%;
+    padding-top: 5px;
+}
+
+input {
+  color: black;
+  font-family: "Magic:The Gathering", serif;
+  border-style: solid;
+  border-color: #daa520 5px;
+}
+
+#fname {
+  background-color: #E9D09A;
+}
+
+#bday {
+  background-color: #E9D09A;
+}
+
+#submit {
+  background-color: gold;
 }

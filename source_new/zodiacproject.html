@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Explain JS remove class to fade in content-->
+<!-- final project descriptions should contain the date range of sign-->
+<!-- "date range: XX-XX to XX-XX
+    1-3 sentence explanation or description."-->
+
+<head>
+  <meta charset="utf-8">
+  <title>JS-CSS</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="blackScreen" onload="fade2Content();"> <!-- event listener = 'onload', js function= 'fade2Content()', element class = 'blackScreen'-->
+  <div id="wrapper">
+     <div id="guildheader">
+       Join Your Guild!
+     </div>
+    <div id="buttons">
+    <aside>
+    <div id='left'>
+    <button id='trans'>Transguild</button>
+    <button id='bor'>Boros</button>
+    <button id='dim'>Dimir</button>
+    <button id='sim'>Simic</button>
+    <button id='sel'>Selesnya</button>
+    <button id='azo'>Azorious</button>
+    </div>
+    <div id='right'>
+    <button id='bys'>Bystander</button>
+    <button id='izz'>Izzet</button>
+    <button id='orz'>Orzhov</button>
+    <button id='rak'>Rakdos</button>
+    <button id='gol'>Golgari</button>
+    <button id='gru'>Gruul</button>
+    </div>
+    <div id='help'>
+      <button>???</button>
+    </div>
+    </aside>
+    </div>
+      <div id=allPics>
+      <img  class="display" id="ravnica" src="graphics2/ravnica.jpg" alt="ravnica">
+      </div>
+    <form onsubmit="return calZodiac();">
+      <p>
+       <!-- use an id and name of the same value to avoid confusion when manipulating objects-->
+       <!-- required perameter makes sure user enters all information needed into the form; v important-->
+        <input id="fname" name="fname" type="text" placeholder="First Name" required>
+      </p>
+      <p>
+        <input id="bday" name="bday" type="date" required>
+      </p>
+      <p>
+        <input id="submit" type="submit">
+      </p>
+    <div id="displayMsg">
+    <p>Find out your guild here!</p>
+    </div>
+    </form>
+    </div>
+    </div>
+
+
+  </div>
+  <script src="j_s/main.js"></script>
+</body>
+
+</html>
