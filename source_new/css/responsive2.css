@@ -15,6 +15,8 @@ nav {
 	margin: 0 auto;
 	text-align: center;
 	font-size: 16px;
+	width: 960px;
+	height: auto;
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -81,6 +83,10 @@ li {
 	padding-bottom: 5%;
 }
 
+#portfolio {
+	font-size: 24px;
+}
+
 #responsivegraphic {
 	display: flex;
 	width: 80%;
@@ -88,6 +94,69 @@ li {
 	margin: 0 auto;
 	justify-content: center;
 }
+
+#fname {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+}
+
+#lname {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+}
+
+#email {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+}
+
+
+#textbox {
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	width: 350px;
+	height: 150px;
+}
+
+#jGuit1{
+	width: 30%;
+}
+
+#jGuit2{
+	width: 30%;
+}
+
+#jGuit3{
+	width: 30%;
+}
+
+#jGuit4{
+	width: 30%;
+}
+
+#jGuit5{
+	width: 30%;
+}
+
+#jGuit6{
+	width: 30%;
+}
+
+#death1{ 
+	width: 20%;
+ }
+
+ #death2{ 
+	width: 20%;
+ }
+
+ #death3{ 
+	width: 20%;
+ }
 
 a:link {
 	text-decoration: none;
@@ -116,4 +185,9 @@ a:active {
 	nav{
 		width: 100%;
 	}
+}
+
+#socLinks {
+	display: flex;
+	justify-content: center;
 }

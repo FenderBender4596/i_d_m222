@@ -8,8 +8,24 @@
 
 <head>
   <meta charset="utf-8">
-  <title>JS-CSS</title>
+  <title>Join Your Guild!</title>
   <link rel="stylesheet" href="css/main.css">
+  <style>
+    body {
+      background-image: url("graphics2/parchment.jpg");
+    }
+
+    form {
+      background-image: url("graphics2/background_image.png");
+      margin-top: 2px;
+      width: 800px;
+      height: 300px;
+      background-color: #E9D09A;
+      color: white;
+      text-shadow: 2px 2px #000000;
+      cursor: text;
+    }
+  </style>
 </head>
 
 <body class="blackScreen" onload="fade2Content();"> <!-- event listener = 'onload', js function= 'fade2Content()', element class = 'blackScreen'-->
@@ -40,14 +56,14 @@
     </div>
     </aside>
     </div>
-      <div id=allPics>
-      <img  class="display" id="ravnica" src="graphics2/ravnica.jpg" alt="ravnica">
-      </div>
     <form onsubmit="return calZodiac();">
       <p>
        <!-- use an id and name of the same value to avoid confusion when manipulating objects-->
        <!-- required perameter makes sure user enters all information needed into the form; v important-->
         <input id="fname" name="fname" type="text" placeholder="First Name" required>
+      </p>
+       <p>
+        <input id= "lname" name="lname" type="text" placeholder="Last Name" required>
       </p>
       <p>
         <input id="bday" name="bday" type="date" required>
@@ -55,16 +71,42 @@
       <p>
         <input id="submit" type="submit">
       </p>
+    <br>
     <div id="displayMsg">
     <p>Find out your guild here!</p>
     </div>
     </form>
+
+    <br>
+    <div id=allPics>
+      <img  class="display" id="ravnica" src="graphics2/ravnica.jpg" alt="ravnica">
+      <img src="graphics2/transguild.png" id="tran" alt="transguild">
+      <img src="graphics2/boros.png" id="boros" alt="transguild">
+      <img src="graphics2/dimir.png" id="dimir" alt="dimir">
+      <img src="graphics2/simic.png" id="simic" alt="simic">
+      <img src="graphics2/selesnya.png" id="seles" alt="selesnya">
+      <img src="graphics2/azorius.png" id="azor" alt="azorious">
+      <img src="graphics2/bystander.png" id="byst" alt="bystander">
+      <img src="graphics2/izzet.png" id="izzet" alt="izzet">
+      <img src="graphics2/orhzov.png" id="orhz" alt="orhzov">
+      <img src="graphics2/rakdos.png" id="rakd" alt="rakdos">
+      <img src="graphics2/golgari.png" id="golg" alt="golgari">
+      <img src="graphics2/gruul.png" id="gruu" alt="gruul">
+    </div>
     </div>
     </div>
 
 
   </div>
   <script src="j_s/main.js"></script>
+
 </body>
+
+<footer>
+ <p>
+   copyright goes to Wizards Of The Coast, and Hasbro Inc.
+ </p>
+</footer>
+
 
 </html>

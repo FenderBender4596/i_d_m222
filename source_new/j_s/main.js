@@ -5,7 +5,7 @@
 //
 // Declare global variables outside of functions here
 var firstName;
-var birthDayObj;
+var lastName; 
 //
 var WeekDays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 //
@@ -46,29 +46,29 @@ function calZodiac() {
   var astroSign;
 
   if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
-    astroSign = 'Azorious Senate'
+    astroSign = 'Azorious Senate! The logical, elitist governers of Ravnica, who believe beuracracy and regulation are the true keys to ending chaos. You truly believe in order and balance, which can be considered a curse or a blessing';
   } else if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 12 && whichDayOfMonth <= 21)) {
-    astroSign = 'Cult Of Rakdos';
+    astroSign = 'Cult Of Rakdos! Individuals who join this guild usually have a focus on pleasure, even if it causes pain and suffering amongst others. You seize the day, and live life to the fullest, even if it may cost your own life';
   } else if ((whichMonth == 10 && whichDayOfMonth >= 24) || (whichMonth == 11 && whichDayOfMonth <= 21)) {
-    astroSign = 'House Dimir';
+    astroSign = 'House Dimir! The rogues of Ravnica; Individuals who join this guild are secretive, stay in the shadows, and prefer to work underground, and behind the scenes. No one is aware of your guild or its existence, which is what makes you so dangerous';
   } else if ((whichMonth == 9 && whichDayOfMonth >= 23) || (whichMonth == 10 && whichDayOfMonth <= 23)) {
-    astroSign = 'Selesnya Conclave';
+    astroSign = 'Selesnya Conclave! Selfless, Nurturing, and Spiritual, often involved with the maintenance of life in Ravnica. You believe in spreading these values of peace and love to the point others may find it off putting';
   } else if ((whichMonth == 8 && whichDayOfMonth >= 23) || (whichMonth == 9 && whichDayOfMonth <= 22)) {
-    astroSign = 'Orzhov Syndicate';
+    astroSign = 'Orzhov Syndicate! The Ravnican guild of business, focused on community, tradition, and dealing with the dead souls of Ravnica. You deal in only absolute values, and only believe in people for their net worth';
   } else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
-    astroSign = 'Golgari Swarm';
+    astroSign = 'Golgari Swarm! The embodiement of life and death, growth, and inevitably, power, lie ahead as you stick with this guild! Be careful, as golgari members tend to look a bit more dead than when they first started';
   } else if ((whichMonth == 6 && whichDayOfMonth >= 22) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
-    astroSign = 'Simic Combine';
+    astroSign = 'Simic Combine! Follows the path of medicine and biomancy. Follows the teachings of Mormir Vig to improve the life forms of Ravnica! You have an educated feeling towards nature, and believe growth comes from scientific progress';
   } else if ((whichMonth == 5 && whichDayOfMonth >= 21) || (whichMonth == 6 && whichDayOfMonth <= 21)) {
-    astroSign = 'Gruul clans';
+    astroSign = 'Gruul clans! The Caretakers Of Old: Once a noble and respected tribe, the gruul clans were the caretakers of Ravnica. You have a wild, untamed passion for nature, and feel that the progress of civilization will be its downfall';
   } else if ((whichMonth == 4 && whichDayOfMonth >= 20) || (whichMonth == 5 && whichDayOfMonth <= 20)) {
-    astroSign = 'Boros Legion';
+    astroSign = 'Azorius Senate! Stubborn, aggressive, and logical, The boros legion is the militant police force of Ravnica! You prefer structure, discipline, and value honor above all other things';
   } else if ((whichMonth == 3 && whichDayOfMonth >= 21) || (whichMonth == 4 && whichDayOfMonth <= 19)) {
-    astroSign = 'Izzet League. You are quick witted and cunning';
+    astroSign = 'Izzet League! The Utility servants of Ravnica; You are an obsessive, keen, and creative individual, with a short attention span. You "play with fire," and often let your huberis get the best of you.';
   } else if ((whichMonth == 2 && whichDayOfMonth >= 19) || (whichMonth == 3 && whichDayOfMonth <= 20)) {
-    astroSign = 'Transguild';
+    astroSign = 'Transguild! The undecided magic users of Ravnica. You use your magic for your own gain, as a bounty hunter, switching between guilds. You have various skills, are a jack of all trades, and work twice as hard as everyone else';
   } else if ((whichMonth == 1 && whichDayOfMonth >= 20) || (whichMonth == 2 && whichDayOfMonth <= 18)) {
-    astroSign = 'Bystander';
+    astroSign = 'Bystander! The common folk of Ravnica, unaware of what goes on around them. They live here knowing of the various guilds, but never participating. They are usually lost, or unsure of what lies ahead';
   }
 
   //
@@ -77,8 +77,8 @@ function calZodiac() {
 
   var outputArea = document.getElementById('displayMsg');
   var msg = '';
-  msg += '<p>Hello ' + firstName + '.</p>';
-  msg += '<p>Your zodiac sign is ' + astroSign + '.</p>';
+  msg += '<p>Citizen ' + firstName + '!</p>';
+  msg += '<p>You have been recruited  for ' + astroSign + '.</p>';
   msg += '<p>You are <strong>' + currAge + '</strong> years old.</p>';
 
   //
@@ -208,7 +208,7 @@ function displayZodiacSign(evt, whichOne){
 	var imgArray=allPicsObj.children; //DOM command finds all images within that id, and puts information inside array.
 	console.log('imgArray is '+imgArray);
 	console.log('imgArray length is '+imgArray.length);
-	console.log('imgArray 2 is '+imgArray[2].tagName);
+	console.log('imgArray 2 is '+imgArray[1].tagName);
 
 	for(lp=0; lp<imgArray.length; lp++){
 		imgArray[lp].classList.remove('display');
@@ -218,7 +218,7 @@ function displayZodiacSign(evt, whichOne){
 		
 		case 'trans':
 		imgArray[1].classList.add('display');
-		
+		astroSign = 'Transguild! The undecided magic users of Ravnica. You use your magic for your own gain, as a bounty hunter, switching between guilds. You have various skills, are a jack of all trades, and work twice as hard as everyone else';
 		break;
 		
 		case 'bor': 
@@ -227,52 +227,62 @@ function displayZodiacSign(evt, whichOne){
 		break;
 		
 		case 'dim':
-		imgArray[4].classList.add('display');
+		imgArray[3].classList.add('display');
+		astroSign = 'House Dimir! The rogues of Ravnica; Individuals who join this guild are secretive, stay in the shadows, and prefer to work underground, and behind the scenes. No one is aware of your guild or its existence, which is what makes you so dangerous';
 		//displayObj.src='img/ful_aquarius.png';
 		break;
 
 		case 'sim':
-		imgArray[5].classList.add('display');
+		imgArray[4].classList.add('display');
+		astroSign = 'Simic Combine! Follows the path of medicine and biomancy. Follows the teachings of Mormir Vig to improve the life forms of Ravnica! You have an educated feeling towards nature, and believe growth comes from scientific progress';
 		//displayObj.src='img/ful_aquarius.png';
 		break;
 
 		case 'sel':
-		imgArray[3].classList.add('display');
+		imgArray[5].classList.add('display');
+		astroSign = 'Selesnya Conclave! Selfless, Nurturing, and Spiritual, often involved with the maintenance of life in Ravnica. You believe in spreading these values of peace and love to the point others may find it off putting';
 		//displayObj.src='img/ful_aquarius.png';
 		break;
 
 		case 'azo':
 		imgArray[6].classList.add('display');
+		astroSign = 'Azorious Senate! The logical, elitist governers of Ravnica, who believe beuracracy and regulation are the true keys to ending chaos. You truly believe in order and balance, which can be considered a curse or a blessing';
 		//displayObj.src='img/ful_aquarius.png';
 		break;
 
 		case 'bys':
 		imgArray[7].classList.add('display');
+		astroSign = 'Bystander! The common folk of Ravnica, unaware of what goes on around them. They live here knowing of the various guilds, but never participating. They are usually lost, or unsure of what lies ahead';
 		//displayObj.src='img/ful_aquarius.png';
 		break;
 
 		case 'izz':
 		imgArray[8].classList.add('display');
+		astroSign = 'Izzet League! The Utility servants of Ravnica; You are an obsessive, keen, and creative individual, with a short attention span. You "play with fire," and often let your huberis get the best of you.';
 		//displayObj.src='img/ful_aquarius.png';
 		break;
 
 		case 'orz':
 		imgArray[9].classList.add('display');
+		astroSign = 'Orzhov Syndicate! The Ravnican guild of business, focused on community, tradition, and dealing with the dead souls of Ravnica. You deal in only absolute values, and only believe in people for their net worth';
 		//displayObj.src='img/ful_aquarius.png';
 		break;
 
 		case 'rak':
 		imgArray[10].classList.add('display');
+		astroSign = 'Cult Of Rakdos! Individuals who join this guild usually have a focus on pleasure, even if it causes pain and suffering amongst others. You seize the day, and live life to the fullest, even if it may cost your own life';
 		//displayObj.src='img/ful_aquarius.png';
 		break;
 
 		case 'gol':
 		imgArray[11].classList.add('display');
+		astroSign = 'Golgari Swarm! The embodiement of life and death, growth, and inevitably, power, lie ahead as you stick with this guild! Be careful, as golgari members tend to look a bit more dead than when they first started';
 		//displayObj.src='img/ful_aquarius.png';
 		break;
 
 		case 'gru':
 		imgArray[12].classList.add('display');
+		astroSign = 'Gruul clans! The Caretakers Of Old: Once a noble and respected tribe, the gruul clans were the caretakers of Ravnica. You have a wild, untamed passion for nature, and feel that the progress of civilization will be its downfall';
 		//displayObj.src='img/ful_aquarius.png';
 		break;
 

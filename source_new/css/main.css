@@ -4,12 +4,18 @@ html{
 }
 
 body {
-  font-family: "Magic:The Gathering", serif;
+  font-family: 'Cinzel', serif;
   margin: 12px;
   background-color: #333333;
   /* transition on change */
+  opacity: 1;
+  transition: 3s opacity;
 }
 
+body.blackScreen {
+  opacity: 0;
+  transition: none;
+}
 
 #wrapper {
   background-color: #cca831;
@@ -22,6 +28,7 @@ body {
 }
 
 #guildheader {
+  font-family: 'Cinzel', serif;
   background-color: #E9D09A;
   color: gold;
   -webkit-text-stroke-width: 1px;
@@ -32,12 +39,13 @@ body {
 }
 
 button {
-  font-family: "Magic:The Gathering", serif;
+  font-family: 'Cinzel', serif;
   background-color: gold;
   max-width: 72px;
   max-height: 72px;
-  font-size: 14px;
+  font-size: 9px;
   border-style: solid;
+  cursor: pointer;
 }
 
 #left {
@@ -59,25 +67,72 @@ button {
 #ravnica {
     display: block;
     margin: auto;
-    width: 40%;
+    width: 65%;
     padding-top: 5px;
+    margin-top: -10%;
 }
+
 
 input {
   color: black;
-  font-family: "Magic:The Gathering", serif;
+  font-family: 'Cinzel', serif;
   border-style: solid;
   border-color: #daa520 5px;
 }
 
 #fname {
   background-color: #E9D09A;
+  cursor: text;
+}
+
+#lname {
+  background-color: #E9D09A;
+  cursor: text;
 }
 
 #bday {
   background-color: #E9D09A;
+  cursor: text;
 }
 
 #submit {
   background-color: gold;
+  cursor: pointer;
+}
+
+#displayMsg {
+  font-size: 14px;
+  position: center;
+  text-align: center;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+#allPics{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  margin-left: 302px;
+  margin-top: 2px;
+}
+
+#allPics img{
+  position: absolute;
+  left: 0;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+  margin-top: -20%;
+}
+
+#allPics img.display{
+  opacity: 1;
+}
+
+footer {
+  background-color: #333333;
+  color: #f7f7f7;
+  font-family: 'Cinzel', serif;
+  text-align: center;
 }
